@@ -7,6 +7,7 @@ use Reweb\Job\Backend;
 $caixaEletronico = new Backend\CaixaEletronico;
 
 //NECESSARIO PARA INICIAR QUALQUER TIPO DE TRANSAÇÃO
+//CASO NÃO SEJA SETADA ESTA FUNÇÃO, A FUNÇÃO CONSTRUCT DO PHP UTILIZARA A CONTA CORRENTE (0) POR DEFAULT
 echo $caixaEletronico->selecionaConta(1);
 
 //ESPERA UM PARAMETRO (valorSaque)
